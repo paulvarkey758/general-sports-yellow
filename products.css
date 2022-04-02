@@ -1,0 +1,164 @@
+nav{
+    background-color: black !important;
+}
+#item-section{
+    margin-top: 4.5rem;
+}
+.treadmills,.ascenttrainers,.climbmills,.steppers,.cycles,.ellipticals{
+    display: none;
+}
+.item-card{
+    width: 80%;
+    margin:1.5rem auto;
+    text-align: center;
+    padding: 0.75rem;
+}
+.item-card:hover{
+    transform: scale(1.2);
+}
+.item-card img{
+    width: 100%;
+}
+.item-name{
+    font-weight: bold;
+    color: black;
+    margin-top: 1rem;
+
+}
+.side-bar{
+    width: 16rem;
+    height: 100%;
+    background-color: black;
+    color: white;
+    padding-top: 3rem;
+}
+.side-bar-list{
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 3rem;
+}
+.side-bar-list ul{
+    list-style: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2rem;
+    margin-top: 1.5rem;
+}
+.side-bar-list ul li label{
+    margin-left: 1rem;
+}.main-cart{
+    visibility: hidden;
+}
+
+/*========================================item page========================*/
+.back-btn{
+    position: fixed;
+    top: 10rem;
+    left: 2rem;
+}
+#item-area{
+    margin-top: 7rem;
+}
+.item-image-card{
+    width: 100%;
+    margin:  1rem auto 2rem;
+}
+#item-image{
+    width: 100%;
+}
+.item-gallery{
+    width: 22rem;
+    margin:0 auto 2rem;
+}
+.gallery-tile{
+    width: 4rem;
+    height: 4rem;
+    display: none;
+    border: 2px solid black;
+}
+.gallery-tile-img{
+    width: 100%;
+}
+.item-details-container{
+    width: 100%;
+    margin: 3rem auto 3rem;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.25);
+}
+.item-details-wrapper{
+    padding: 3rem;
+}
+#item-heading{
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #f1b732;
+}
+#item-console{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: light;
+
+}
+#item-description{
+    margin-top: 1rem;
+}
+.console{
+    display: inline-block;
+    margin-right: 1.5rem;
+    position: relative;
+}
+.console-container{
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(143, 143, 143);
+}
+.console-wrapper{
+    display: block;
+    margin-top: 1rem;
+}
+.label{
+    width: 17rem;
+    position: absolute;
+    bottom: -8rem;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    display: none;
+}
+.console:hover >.label{
+    display: block;
+}
+.label p{
+    font-size: 0.75rem;
+    font-weight: normal;
+    text-align: start;
+    margin-top: 0.4rem;
+    text-transform: none;
+}
+.console-select-icon{
+    width: 40px;
+    height: 2px;
+    background-color: #f1b732;
+    margin:0 auto 5px;
+    display: none;
+}
+.request-section{
+    width: 100%;
+    background-color: black;
+    text-align: right;
+}
+.request-btn{
+    width: 12rem;
+    height: 6rem;
+    background-color: #fdc43f;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: none;
+}
+.request-btn:active{
+    background-color: #f1b732;
+}

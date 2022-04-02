@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Sports Products</title>
+    <!-- CSS only -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    <!--========================================navbar=====================================================================================-->
+    <nav id="nav-bar">
+        <span><img id="logo" src="images/general-sports-logo.png" alt="logo"></span>
+        <span><img class="nav-icon" src="images/harmburger.png" alt=""></span>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!--=======================================================item=================================================================-->
+    <div class="back-btn">
+        <button onclick="goBack()">back</button>
+    </div>
+    <section id="item-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="item-image-card">
+                        <img id="item-image" src="" alt="">
+                    </div>
+                    <div class="item-gallery">
+                        <div class="gallery-tile" style="border-color: #f1b732;">
+                            <img class="gallery-tile-img" src="" onclick="itemGallerySelector(this)" alt="">
+                        </div>
+                        <div class="gallery-tile">
+                            <img class="gallery-tile-img" src="" onclick="itemGallerySelector(this)" alt="">
+                        </div>
+                        <div class="gallery-tile">
+                            <img class="gallery-tile-img" src="" onclick="itemGallerySelector(this)" alt="">
+                        </div>
+                        <div class="gallery-tile">
+                            <img class="gallery-tile-img" src="" onclick="itemGallerySelector(this)" alt="">
+                        </div>
+                        <div class="gallery-tile">
+                            <img class="gallery-tile-img" src="" onclick="itemGallerySelector(this)" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="item-details-container">
+                        <div class="item-details-wrapper">
+                            <h1 id="item-heading"></h1>
+                        <span id="item-console">with touch xl console</span>
+                        <p id="item-description"></p>
+                        <div class="console-container">
+                            Available Consoles
+                            <div class="console-wrapper">
+                                <div class="console">
+                                    <div class="console-select-icon" style="display: block;"></div>
+                                    <img id="touch-xl" src="images/products/consoles/optimized---console-thmb-touch-xl-60.png" data-consolename=" with touch xl console" onclick="consoleSelector(this)" alt="">
+                                    <div class="label">
+                                        <span>Touch Xl</span>
+                                        <p>22" touchscreen console features an app based intrface that mirrors familiar smartphone and tablet operating systems.</p>
+                                    </div>
+                                </div>
+                                <div class="console">
+                                    <div class="console-select-icon"></div>
+                                    <img id="touch" src="images/products/consoles/optimized---console-thmb-touch-60.png" data-consolename=" with touch console" onclick="consoleSelector(this)" alt="">
+                                    <div class="label">
+                                        <span>Touch</span>
+                                        <p>16" touchscreen console features an app based intrface that mirrors familiar smartphone and tablet operating systems.</p>
+                                    </div>
+                                </div>
+                                <div class="console">
+                                    <div class="console-select-icon"></div>
+                                    <img id="premium-led" src="images/products/consoles/optimized---console-thmb-pled-60.png" data-consolename=" with premium led console" onclick="consoleSelector(this)" alt="">
+                                    <div class="label">
+                                        <span>Premium LED</span>
+                                        <p>An 8,000-pixel display fills the screen with color and sharp graphics.</p>
+                                    </div>
+                                </div>
+                                <div class="console">
+                                    <div class="console-select-icon"></div>
+                                    <img id="led" src="images/products/consoles/optimized---console-thmb-led-60.png" data-consolename=" with led console" onclick="consoleSelector(this)" alt="">
+                                    <div class="label">
+                                        <span>LED</span>
+                                        <p>Complete, easy-to-read workout feedback.</p>
+                                    </div>
+                                </div>
+                                <div class="console">
+                                    <div class="console-select-icon"></div>
+                                    <img id="gt-led" src="images/products/consoles/optimized---console-thmb-gt-led-60.png" data-consolename=" with group training led console" onclick="consoleSelector(this)"  alt="">
+                                    <div class="label">
+                                        <span>Group Training LED</span>
+                                        <p>Members stay in sync with instructor cues with the easy to navigate interface.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="mt-5 ms-3" style="display:block">*product availability may vary by market or by color</span>
+                        </div>
+                        <div class="request-section">
+                            <button class="request-btn">Request Quote</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=========================================================footer===============================================================-->
+    <footer>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="footer-text-wrapper">
+                    <h4>Lorem Ipsum</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut repellat nisi amet provident sint architecto a est inventore, ipsum incidunt magni nobis enim, optio obcaecati dolorem dicta eveniet! Odio, accusamus.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="link-wrapper">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="address-wrapper">
+                    <h4>Address</h4>
+                    <div>
+                        <div class="address-container">
+                            <span><img class="address-icon" src="images/location.png" alt=""></span>
+                            <p>ABCD Building <br>
+                                XYZ street <br>
+                                Near new road</p>
+                        </div>
+                        <div class="address-container">
+                            <span><img class="address-icon" src="images/phone.png" alt=""></span>
+                            <p>1234567890</p>
+                        </div>
+                        <div class="address-container">
+                            <span><img class="address-icon" src="images/mail.png" alt=""></span>
+                            <p>general@example.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <img src="images/facebook.png" alt="">
+                    <img src="images/instagram.png" alt="">
+                    <img src="images/linkedin.png" alt="">
+                    <img src="images/youtube.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var itemImage=document.getElementById("item-image");
+        var itemGallery=document.getElementsByClassName("gallery-tile-img");
+        var itemGalleryTile=document.getElementsByClassName("gallery-tile");
+        var imageurl1=localStorage.getItem("imageUrl1");
+        itemImage.src=imageurl1;
+        var imageurl2=localStorage.getItem("imageUrl2");
+        var imageurl3=localStorage.getItem("imageUrl3");
+        var imageurl4=localStorage.getItem("imageUrl4");
+        var imageurl5=localStorage.getItem("imageUrl5");
+        var imageurls=[imageurl1,imageurl2,imageurl3,imageurl4,imageurl5];
+        for(var j=0;j<imageurls.length;j++){
+            if(imageurls[j]!=='undefined'){
+                itemGalleryTile[j].style.display="inline-block"
+            }
+        }
+        for(var i=0;i<itemGallery.length;i++){
+            
+            itemGallery[i].src=imageurls[i];
+        }
+        
+        document.getElementById("item-heading").innerHTML=localStorage.getItem("item-heading");
+        document.getElementById("item-description").innerHTML=localStorage.getItem("item-desc");
+        
+    </script>
+    <script src="script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
