@@ -13,7 +13,11 @@ window.addEventListener('scroll',changeNavBg);
 
 $(".nav-icon").click(function(){
     $(".nav-list").toggleClass("nav-show")
-    $("#nav-bar").toggleClass("nav-bg")
+    var scrollValue=window.scrollY;
+    if(scrollValue<100){
+        $("#nav-bar").toggleClass("nav-bg")
+    }
+    
 })
 
 /*=======================================product page=====================*/
@@ -34,6 +38,7 @@ function selfun(a){
   localStorage.setItem("item-desc",desc);
   var touchData=a.getAttribute("data-touch");
   localStorage.setItem("touchdata",touchData);
+  console.log(touchData);
   var touchxlData=a.getAttribute("data-touchxl");
   localStorage.setItem("touchxldata",touchxlData);
   var preledData=a.getAttribute("data-preled");
@@ -45,75 +50,130 @@ function selfun(a){
   localStorage.setItem("gtleddata",gtledData);
 }
 
-/*=============side bar=================*/
+/*=============side bar=================
 
-function categorySelector(x){
-    console.log("clicked")
-    
-    var idName=x.dataset.category;
-    document.getElementById(idName).style.display="block";
-    var mainCategory=document.getElementsByName("main-cat");
-    for(var i=0;i<mainCategory.length;i++){
-        if(mainCategory[i].id!=x.id){
-            var temp=mainCategory[i].dataset.category;
-            document.getElementById(temp).style.display="none"
-            var subList=mainCategory[i].dataset.sublist;
-            document.getElementById(subList).style.display="none"
-        }
-    }
-    var subList=x.dataset.sublist;
-    console.log(subList);
-    if(x.checked){
-        document.getElementById(subList).style.display="block";
-        selectedId=x.id;
-        labels=document.getElementsByTagName("label");
-        for(var i=0;i<labels.length;i++){
-            if(labels[i].htmlFor==selectedId){
-                labels[i].style.color="#f1b732";
-            }
-            else{
-                labels[i].style.color="white";
-            }
-        }
-    }
-    else{
-        document.getElementById(subList).style.display="none";
-    }
-}
 /*====================checkbox section===============*/
-function CardioCategorySelector(x){
-    console.log(x.id)
-    var subCat=x.dataset.subcategory;
-    console.log(subCat);
-    var categoryCards=document.getElementsByClassName(subCat);
-    if(x.checked){
-        for(var i=0;i<categoryCards.length;i++){
-            categoryCards[i].style.display="block";
-        }
-        
-    }
-    else{
-        for(var i=0;i<categoryCards.length;i++){
-            categoryCards[i].style.display="none";
-        }
-    }
-}
 
-function strengthCategorySelector(x){
-    var subCat=x.dataset.subcategory;
-    var categoryCards=document.getElementsByClassName(subCat);
-    if(x.checked){
-        for(var i=0;i<categoryCards.length;i++){
-            categoryCards[i].style.display="block";
+/*==================cardio===============*/
+$("#filter-cardio-sub-btn").click(function(e){
+    e.preventDefault();
+    console.log("called");
+    var cardioCategory=document.getElementsByClassName("cardio-sub-category");
+    var subCat;
+    var catData=[];
+    for(var i=0;i<cardioCategory.length;i++){
+        subCat=cardioCategory[i].dataset.subcategory;
+        var catCards=document.getElementsByClassName(subCat);
+        if(cardioCategory[i].checked){
+            /*catData.push(subCat);*/
+            console.log("checked");
+            for(var j=0;j<catCards.length;j++){
+                catCards[j].style.display="block";
+            }
         }
-        
-    }
-    else{
-        for(var i=0;i<categoryCards.length;i++){
-            categoryCards[i].style.display="none";
+        else{
+            catData.push(subCat);
+            for(var j=0;j<catCards.length;j++){
+                catCards[j].style.display="none";
+            }
         }
     }
-}
+    console.log(catData);
+    var catdata={};
+    for(var i=0;i<catData.length;i++){
+        /*catdata["catdata"+i]=catData[i];*/
+        catdata[i]=catData[i];
+    }
+    catdata=JSON.stringify(catdata);
+    console.log(catdata);
+    localStorage.setItem("catData",catdata);
+    var catlength=catData.length;
+    localStorage.setItem("catlen",catlength);
+    console.log(catlength);
+    $(".sub-category-container").hide();
+
+});
+
+/*==============strength==================*/
+$("#filter-strength-sub-btn").click(function(e){
+    e.preventDefault();
+    var strengthCategory=document.getElementsByClassName("strength-sub-category");
+    var subCat;
+    var catData=[];
+    for(var i=0;i<strengthCategory.length;i++){
+        subCat=strengthCategory[i].dataset.subcategory;
+        var catCards=document.getElementsByClassName(subCat);
+        if(strengthCategory[i].checked){
+            console.log("checked");
+            for(var j=0;j<catCards.length;j++){
+                catCards[j].style.display="block";
+            }
+        }
+        else{
+            catData.push(subCat);
+            for(var j=0;j<catCards.length;j++){
+                catCards[j].style.display="none";
+            }
+        }
+    }
+    console.log(catData);
+    var catdata={};
+    for(var i=0;i<catData.length;i++){
+        catdata[i]=catData[i];
+    }
+    catdata=JSON.stringify(catdata);
+    console.log(catdata);
+    localStorage.setItem("catData",catdata);
+    var catlength=catData.length;
+    localStorage.setItem("catlen",catlength);
+    console.log(catlength);
+    $(".sub-category-container").hide();
+});
+
+$("#filter-icon").click(function(){
+    $(".sub-category-container").show();
+});
+
+$("#filter-cancel-btn").click(function(){
+    $(".sub-category-container").hide();
+});
+
+/*=========================to refresh while selecting the category==========*/
+/*===============cardio==============*/
+$(".cardio-btn").click(function(){
+    catdata={"0":"treadmills","1":"ascenttrainers","2":"ellipticals","3":"climbmills","4":"steppers","5":"cycles"};
+    console.log(catdata);
+    localStorage.setItem("catData",catdata);
+    localStorage.setItem("catlen",6);
+    window.location="cardio.html";
+});
+
+/*===============strength==============*/
+$(".strength-btn").click(function(){
+    catdata={"0":"single-station","1":"multi-station","2":"fr-weights","3":"plate-loaded","4":"racks-platforms"};
+    console.log(catdata);
+    localStorage.setItem("catData",catdata);
+    localStorage.setItem("catlen",5);
+    window.location="strength.html";
+});
+
+
+/*==========to load the producs of previously selected category===============*/
+window.addEventListener("load",function(){
+    var subcategories=localStorage.getItem("catData");
+    var subcats=JSON.parse(subcategories);
+    var catlength=localStorage.getItem("catlen");
+
+    for(var i=0;i<catlength;i++){
+        var temp=subcats[i];
+        var selectedCategories=document.getElementsByClassName(temp);
+        for(var j=0;j<selectedCategories.length;j++){
+            selectedCategories[j].style.display="none";
+        }
+
+    }
+})
+
 /*==================================================*/
 
 
@@ -147,7 +207,9 @@ function consoleSelector(e){
     var c3=localStorage.getItem("preleddata");
     var c4=localStorage.getItem("leddata");
     var c5=localStorage.getItem("gtleddata");
+    console.log(c3);
     imagePack1=JSON.parse(c1);
+    console.log(imagePack1);
     imagePack2=JSON.parse(c2);
     imagePack3=JSON.parse(c3);
     imagePack4=JSON.parse(c4);

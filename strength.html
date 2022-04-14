@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Sports Products</title>
+    <!-- CSS only -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    <!--========================================navbar=====================================================================================-->
+    <nav id="nav-bar" class="nav-bg">
+        <span><img id="logo" src="images/general-sports-logo.png" alt="logo"></span>
+        <span><img class="nav-icon" src="images/harmburger.png" alt=""></span>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!--============================================================categories================================================================-->
+    <div class="category-bar">
+        <div class="inner-bar">
+            <button class="cardio-btn">CARDIO</button>
+            <button class="strength-btn">GROUP TRAINING</button>
+            <a href="strength.html"><button>STRENGTH</button></a>
+            <button>ACCESSORIES</button>
+        </div>
+    </div>
+    <!--=======================================================poducts=================================================================-->
+    <section id="item-section">
+        <div class="filter-button">
+            <div class="filter-button-inner">
+                <img id="filter-icon" src="images/Filter-icon.png">
+                <div class="sub-category-container" style="display: none;">
+                    <div>
+                        <form action="" id="cardio-category-form">
+                            <ul id="cardio-sub-list">
+                                <li><input type="checkbox" id="sngl" class="strength-sub-category" data-subcategory="single-station" checked><label for="tmls">single station</label></li>
+                                <li><input type="checkbox" id="mlts" class="strength-sub-category" data-subcategory="multi-station" checked><label for="astr">multi station</label></li>
+                                <li><input type="checkbox" id="frwe" class="strength-sub-category" data-subcategory="fr-weights" checked><label for="elpt">free weights</label></li>
+                                <li><input type="checkbox" id="clml" class="strength-sub-category" data-subcategory="plate-loaded" checked><label for="clml">plate loaded</label></li>
+                                <li><input type="checkbox" id="pltd" class="strength-sub-category" data-subcategory="racks-platforms" checked><label for="stpr">racks & platforms</label></li>
+                            </ul>
+                            <div class="filter-btn-wrapper">
+                                <input class="filter-btn" id="filter-strength-sub-btn" type="submit" value="Filter">
+                                <input class="filter-btn" id="filter-cancel-btn" type="button" value="Cancel">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-md-12 pt-2">
+                <div class="container product-container">
+                    
+                    <!--==========================================================strenght section==========================================-->
+                    <div id="strength-container">
+                        <div class="row">
+                            <!--=========================================single station=============================-->
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-chest-press.jpg" data-itemheading="Aura Chest Press" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Chest Press</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-pectoral-fly.jpg" data-itemheading="Aura Pectoral Fly" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Pectoral Fly</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-converging-chest-press.jpg" data-itemheading="Aura Converging Chest Press" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Converging Chest Press</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-shoulder-press.jpg" data-itemheading="Aura Shoulder Press" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Shoulder Press</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-lateral-raise.jpg" data-itemheading="Aura Lateral Raise" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Lateral Raise</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-rear-delt-Fly.jpg" data-itemheading="Aura Rear Delt /Fly" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Rear Delt /Fly</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-converging-shoulder-press.jpg" data-itemheading="Aura Converging Shoulder Press" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Converging Shoulder Press</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-lat-pulldown-1.jpg" data-image2="images/products/single-station/aura-lat-pulldown-2.jpg" data-itemheading="Aura Lat Pulldown" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Lat Pulldown</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-seated-row.jpg" data-itemheading="Aura Seated Row" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Seated Row</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-diverging-lat-pulldown.jpg" data-itemheading="Aura Diverging Lat Pulldown" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Diverging Lat Pulldown</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-diverging-seated-row.jpg" data-itemheading="Aura Diverging Seated Row" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Diverging Seated Row</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-arm-curl.jpg" data-itemheading="Aura Arm Curl" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Arm Curl</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-triceps-press.jpg" data-itemheading="Aura Triceps Press" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Triceps Press</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-tricep-extension.jpg" data-itemheading="Aura Tricep Extension" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Tricep Extension</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-abdominal-crunch-1.jpg" data-image2="images/products/single-station/aura-abdominal-crunch-2.jpg" data-image3="images/products/single-station/aura-abdominal-crunch-3.jpg" data-itemheading="Aura Abdominal Crunch" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Abdominal Crunch</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-back-extension.jpg" data-itemheading="Aura Back Extension" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Back Extension</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-rotory-torso.jpg" data-itemheading="Aura Rotory Torso" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Rotory Torso</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-dip-chin-assist.jpg" data-itemheading="Aura Dip /Chin Assist" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Dip /Chin Assist</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-leg-press.jpg" data-itemheading="Aura Leg Press" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Leg Press</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-leg-extension.jpg" data-itemheading="Aura Leg Extension" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Leg Extension</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-seated-leg-curl.jpg" data-itemheading="Aura Seated Leg Curl" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Seated Leg Curl</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-prone-leg-curl.jpg" data-itemheading="Aura Prone Leg Curl" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Prone Leg Curl</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-hip-adductor-1.jpg" data-image2="images/products/single-station/aura-hip-adductor-2.jpg" data-itemheading="Aura Hip Adductor" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Hip Adductor</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-hip-abductor.jpg" data-itemheading="Aura Hip Abductor" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Hip Abductor</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-rotary-hip.jpg" data-itemheading="Aura Rotary Hip" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Rotary Hip</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/aura-calf-press.jpg" data-itemheading="Aura Calf Press" data-itemdesc="" alt="">
+                                    <span class="item-name">Aura Calf Press</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/ultra-converging-chest-press-1.jpg" data-image2="images/products/single-station/ultra-converging-chest-press-2.jpg" data-itemheading="Ultra Converging Chest Press" data-itemdesc="When it comes to building and toning major upper-body muscle groups, the powerful and comfortable Ultra Converging Chest Press outperforms expectations. Independent converging movements provide a natural path of motion. A spring-assisted seat with seven positions and a gas-assisted back pad with six positions adjust effortlessly to accommodate users of different sizes and range-of-movement changes. The integrated foot platform enhances stability and comfort during use, and the open design offers easy entry and exit." alt="">
+                                    <span class="item-name">Ultra Converging Chest Press</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/ultra-lateral-raise-1.jpg" data-image2="images/products/single-station/ultra-lateral-raise-2.jpg" data-itemheading="Ultra Lateral Raise" data-itemdesc="The Ultra Lateral Raise tones and builds mid-shoulder muscles with a design that’s as powerful as it is intuitive. Oversized arm pads enhance comfort for users of all sizes, while rotating handles provide a natural, comfortable motion." alt="">
+                                    <span class="item-name">Ultra Lateral Raise</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/ultra-pec-fly-rear-delt-1.jpg" data-image2="images/products/single-station/ultra-pec-fly-rear-delt-2.jpg" data-image3="images/products/single-station/ultra-pec-fly-rear-delt-3.jpg" data-itemheading="Ultra Pec Fly \Rear Delt" data-itemdesc="Offer a powerful, comfortable way to strengthen major upper-body muscle groups with the Ultra Pec Fly / Rear Delt. Rotating grips provide smooth movement during use, while an angled back pad and delt grips optimize user biomechanics. Oversized handles reduce the need to adjust the seat position between pec fly and rear deltoid exercises. It even includes a heavy weight stack to accommodate strength training enthusiasts looking to go farther with their strength training workouts." alt="">
+                                    <span class="item-name">Ultra Pec Fly \Rear Delt</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/ultra-converging-shoulder-press-1.jpg" data-image2="images/products/single-station/ultra-converging-shoulder-press-2.jpg" data-itemheading="Ultra Converging Shoulder Press" data-itemdesc="The Ultra Converging Shoulder Press provides a powerfully comfortable solution for building and toning deltoids. Independent converging movements provide a natural path of motion. Dual-position hand grips allow for greater training variety, and counterbalanced pressing arms provide reduced starting resistance. It even includes a reclined seat position to encourage better posture and provide back support." alt="">
+                                    <span class="item-name">Ultra Converging Shoulder Press</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/ultra-diverging-lat-pulldown-1.jpg" data-image2="images/products/single-station/ultra-diverging-lat-pulldown-2.jpg" data-image3="images/products/single-station/ultra-diverging-lat-pulldown-3.jpg" data-itemheading="Ultra Diverging Lat Pulldown" data-itemdesc="For a smarter way to build and tone lats, the Ultra Diverging Lat Pulldown is as powerful as it is comfortable. Independent diverging movements provide a natural path of motion. The angled seat encourages proper user positioning, while the thigh pads and seat easily adjust to provide stability, comfort and optimized ergonomics." alt="">
+                                    <span class="item-name">Ultra Diverging Lat Pulldown</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/ultra-diverging-seated-row-1.jpg" data-image2="images/products/single-station/ultra-diverging-seated-row-2.jpg" data-itemheading="Ultra Diverging Seated Row" data-itemdesc="For a complete, comfortable way to strengthen the muscles of the upper back and the lats, choose our powerful Ultra Diverging Seated Row. Independent diverging movements provide a natural path of motion. Dual-position foot placement makes use comfortable, while an adjustable chest pad with gas shock accommodates users of all sizes." alt="">
+                                    <span class="item-name">Ultra Diverging Seated Row</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/ultra-independent-biceps-curl-1.jpg" data-image2="images/products/single-station/ultra-independent-biceps-curl-2.jpg" data-image3="images/products/single-station/ultra-independent-biceps-curl-3.jpg" data-itemheading="Ultra Independent Biceps Curls" data-itemdesc="The powerful, comfortable design of the Ultra Independent Biceps Curl makes toning and building the muscles of the upper arm more efficient and effective. Unique pivoting elbow pads and rotating handles make every curl smarter and more comfortable. An innovative, open design eliminates chest compression and makes entry and exit easier than ever. It includes elbow pad covers to protect the upholstery at touchpoints." alt="">
+                                    <span class="item-name">Ultra Independent Biceps Curls</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/ultra-dependent-arm-curl-1.jpg" data-image2="images/products/single-station/ultra-dependent-arm-curl-2.jpg" data-itemheading="Ultra Dependent Arm Curl" data-itemdesc="The powerful and comfortable design of the Ultra Dependent Arm Curl gives you the most advanced functionality with an intuitive design that couldn’t be easier to operate. Rotating Action Specific Grips provide greater comfort and minimal point pressure. Arm pad is angled for stability, and limits unwanted shoulder movement during exercise. Elbow pad wear cover improves upholstery performance in high contact areas. Color-coded pivot indicates correct elbow placement for optimal feel and performance." alt="">
+                                    <span class="item-name">Ultra Dependent Arm Curl</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/ultra-triceps-press-1.jpg" data-image2="images/products/single-station/ultra-triceps-press-2.jpg" data-itemheading="Ultra Triceps Press" data-itemdesc="Offer a comfortable, intuitive way to tone and build triceps with the Ultra Triceps Press. The oversized rotating handles accommodate a wide variety of users and provide exercise variation. Additionally, an angled back pad reduces stress while enhancing stability and comfort." alt="">
+                                    <span class="item-name">Ultra Triceps Press</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/ultra-triceps-extension-1.jpg" data-image2="images/products/single-station/ultra-triceps-extension-2.jpg" data-itemheading="Ultra Triceps Extension" data-itemdesc="The powerful and comfortable design of the Ultra Triceps Extension gives you the most advanced functionality with an intuitive design that couldn’t be easier to operate. Padded hand rests provide a comfortable and stable pressing surface while reducing point pressure on the hands. Handles pivot to automatically adjust for varying forearm lengths. Action Specific Grips provide greater comfort and tailored hand position for the movement. Color-coded pivot indicates correct elbow placement for optimal feel and performance. Foot pegs provide additional stability and support during heavy lifts." alt="">
+                                    <span class="item-name">Ultra Triceps Extension</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/ultra-abdominal-crunch-1.jpg" data-image2="images/products/single-station/ultra-abdominal-crunch-2.jpg" data-itemheading="Ultra Abdominal Crunch" data-itemdesc="Powerful and intuitive, the design of our Ultra Abdominal Crunch offers a comfortable way to tone and build core muscles. The sculpted back pads allow for full muscular contraction, while the dual-supported pivoting design fosters a natural abdominal crunch motion. The self-aligning handles adjust to accommodate a variety of users, and elbow pad covers protect the upholstery at touchpoints." alt="">
+                                    <span class="item-name">Ultra Abdominal Crunch</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/ultra-back-extension-1.jpg" data-image2="images/products/single-station/ultra-back-extension-2.jpg" data-itemheading="Ultra Back Extension" data-itemdesc="Designed for comfort and powerful efficiency, the Ultra Back Extension makes it easy to focus on the back’s major muscle groups. Multi-position foot placement accommodates users of all kinds, and thumb-switch controls offer easy adjustments. Additionally, the contoured back pad enhances comfort and provides added support." alt="">
+                                    <span class="item-name">Ultra Back Extension</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/ultra-rotory-torso-1.jpg" data-image2="images/products/single-station/ultra-rotory-torso-2.jpg" data-itemheading="Ultra Rotory Torso" data-itemdesc="Powerful and comfortable, the Ultra Rotary Torso offers an intuitive way to strengthen core and back muscles. A kneeling position minimizes lower-back stress while stretching hip flexors, and contoured knee pads make use comfortable and stable. Oversized handlebars fit a variety of users without adjustment, while eight starting positions accommodate different ranges of motion. It includes knee pad covers to protect the upholstery at touchpoints." alt="">
+                                    <span class="item-name">Ultra Rotory Torso</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/ultra-lrg-press-1.jpg" data-image2="images/products/single-station/ultra-lrg-press-2.jpg" data-image3="images/products/single-station/ultra-lrg-press-3.jpg" data-itemheading="Ultra Leg Press" data-itemdesc="Our intuitive Ultra Leg Press is just as powerful as it is comfortable when it comes to strengthening the lower body. An angled, adjustable seat optimizes positioning for users of all kinds, while an ergonomically sculpted adjustment handle and gas shock make it quick and easy to change start positions. An oversized foot platform provides movement variety including calf exercises, and an integrated assistance handle offers easy exit and entry. It includes a guide rod and bearing carriage for smooth performance and long-term durability." alt="">
+                                    <span class="item-name">Ultra Leg Press</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/ultra-leg-extension-1.jpg" data-image2="images/products/single-station/ultra-leg-extension-2.jpg" data-image3="images/products/single-station/ultra-leg-extension-3.jpg" data-itemheading="Ultra Leg Extension" data-itemdesc="The powerful Ultra Leg Extension tones and builds quad muscles with efficient, comfortable movements. A self-adjusting tibia pad makes it easy for anyone to find a comfortable position, while a contoured knee pad provides optimal cushioning behind the user’s knee on every rep. Angled seat and back pads encourage full quadriceps contraction, and a clearly marked pivot encourages correct knee alignment. Thumb-switch controls and an ergonomically sculpted adjustment handle make it easy for users to get started." alt="">
+                                    <span class="item-name">Ultra Leg Extension</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/ultra-seated-leg-curl-1.jpg" data-image2="images/products/single-station/ultra-seated-leg-curl-2.jpg" data-itemheading="Ultra Seated Leg Curl" data-itemdesc="The Ultra Seated Leg Curl strengthens hamstrings with a design that’s intuitive, comfortable and powerful in one. Back pad, tibia pad and range-of-motion adjustments are all easily accessible from the seated position. An angled seat and a unique pivot location encourage full hamstring contraction. The gas-assisted adjustable thigh pad and thumb-switch controls make setup easy, while a contoured thigh pad makes even heavy sets comfortable." alt="">
+                                    <span class="item-name">Ultra Seated Leg Curl</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/ultra-prone-leg-curl-1.jpg" data-image2="images/products/single-station/ultra-prone-leg-curl-2.jpg" data-itemheading="Ultra Prone Leg Curl" data-itemdesc="Count on the comfortable, intuitive design of our powerful Ultra Prone Leg Curl to strengthen calf and hamstring muscles. Contoured elbow pads enhance stabilization and comfort, while a divergent pad angle eliminates lower-back stress. Thumb-switch controls make adjustments effortless, and integrated sweat guards keep the frame looking like." alt="">
+                                    <span class="item-name">Ultra Prone Leg Curl</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/ultra-hip-adductor-1.jpg" data-image2="images/products/single-station/ultra-hip-adductor-2.jpg" data-itemheading="Ultra Hip Adductor" data-itemdesc="The smart, comfortable design of the Ultra Hip Adductor builds strength in the inner thigh with efficient movements. An ergonomically sculpted adjustment handle makes it quick and easy to change the start position, while an adjustable reclining position offers lumbar support ideal for each user’s unique body. Foot pegs and contoured knee pads provide excellent stability and support, and an integrated foot platform makes it easy to enter and exit." alt="">
+                                    <span class="item-name">Ultra Hip Adductor</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/ultra-hip-abductor-1.jpg" data-image2="images/products/single-station/ultra-hip-abductor-2.jpg" data-itemheading="Ultra Hip Abductor" data-itemdesc="The intuitive Ultra Hip Abductor offers a comfortable, efficient way to strengthen the glutes and the function of the hip joint. An ergonomically sculpted adjustment handle makes it quick and easy to change the start position, while an adjustable reclining position offers lumbar support ideal for each user’s unique body. Foot pegs and contoured knee pads provide excellent stability and support, and an integrated foot platform makes it easy to enter and exit." alt="">
+                                    <span class="item-name">Ultra Hip Abductor</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/ultra-calf-extension-1.jpg" data-image2="images/products/single-station/ultra-calf-extension-2.jpg" data-itemheading="Ultra Calf Extension" data-itemdesc="The efficient, intuitive design of the Ultra Calf Extension offers a smart way to build and tone the muscles of the lower leg. An angled seat position provides excellent lumbar support, an ergonomic adjustment handle makes it quick and easy to change the start position, and range-of-motion adjustments accommodates users of different sizes and ability levels. It also features a guide rod and bearing carriage for smooth performance and long-term durability." alt="">
+                                    <span class="item-name">Ultra Calf Extension</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/ultra-glute-1.jpg" data-image2="images/products/single-station/ultra-glute-2.jpg" data-itemheading="Ultra Glute" data-itemdesc="Offer a comfortable, powerful way to tone and build glutes with the intuitive Ultra Glute. Upright user positioning makes the trainer easy to access and comfortable to use. A rotating foot pad provides stable and smooth contact throughout the full range of motion, an oversized foot platform bolsters stability, and an adjustable chest pad accommodates users of all sizes comfortably." alt="">
+                                    <span class="item-name">Ultra Glute</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/versa-converging-chest-press-1.jpg" data-image2="images/products/single-station/versa-converging-chest-press-2.jpg" data-image3="images/products/single-station/versa-converging-chest-press-3.jpg" data-itemheading="Versa Converging Chest Press" data-itemdesc="Make building and toning major chest muscles efficient and comfortable for virtually anyone with our Versa Converging Chest Press station. It’s specifically designed for easy entry and exit, and an adjustable start position helps all the different people you serve find the right range of motion. It includes independent converging movement for a path of motion that’s both natural and comfortable." alt="">
+                                    <span class="item-name">Versa Converging Chest Press</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/versa-pec-fly-rear-delt-1.jpg" data-image2="images/products/single-station/versa-pec-fly-rear-delt-2.jpg" data-itemheading="Versa Pec Fly /Rear Delt" data-itemdesc="Make the most of your space with the smart design of our Versa Pec Fly / Rear Delt dual station. Designed to focus on major upper-body muscles, it features oversized grips to accommodate users of all sizes. Additionally, the forward-facing user position makes every rep more comfortable and natural." alt="">
+                                    <span class="item-name">Versa Pec Fly /Rear Delt</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/versa-converging-shoulder-press-1.jpg" data-image2="images/products/single-station/versa-converging-shoulder-press-2.jpg" data-itemheading="Versa Converging Shoulder Press" data-itemdesc="Our Versa Converging Shoulder Press station makes building and toning deltoids efficient and comfortable. An independent converging movement provides a natural path of motion, while counterbalanced pressing arms optimize starting resistance. It even includes dual-position hand grips for training variety." alt="">
+                                    <span class="item-name">Versa Converging Shoulder Press</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/versa-diverging-lat-pulldown-1.jpg" data-image2="images/products/single-station/versa-diverging-lat-pulldown-2.jpg" data-itemheading="Versa Diverging Lat Pulldown" data-itemdesc="The versatile design of our Versa Diverging Lat Pulldown station makes refining and building lats more effective, efficient and comfortable. Independent diverging motion encourages a natural, smooth path, while independent arm movement offers exercise variety. An angled seat encourages proper user positioning, and the thigh pad easily adjusts to maximize stability and comfort for users of all sizes." alt="">
+                                    <span class="item-name">Versa Diverging Lat Pulldown</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/versa-diverging-seated-row-1.jpg" data-image2="images/products/single-station/versa-diverging-seated-row-2.jpg" data-itemheading="Versa Diverging Seated Row" data-itemdesc="For a more comfortable, more efficient way to focus on major back muscles, choose our Versa Diverging Seated Row station. Independent cable movement provides a smooth, user-defined path of motion and excellent exercise variety. An adjustable chest pad accommodates users of all sizes, while rotating grips and ergonomic hand positioning maximize comfort on every rep." alt="">
+                                    <span class="item-name">Versa Diverging Seated Row</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/versa-bicep-curl-1.jpg" data-image2="images/products/single-station/versa-bicep-curl-2.jpg" data-itemheading="Versa Bicep Curl" data-itemdesc="Choose our Versa Biceps Curl to help build upper-arm muscle efficiently and effectively. An angled pad provides stability and limits unwanted shoulder movement during exercise, while an optimized pivot point encourages a biomechanically correct range of motion." alt="">
+                                    <span class="item-name">Versa Bicep Curl</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/versa-triceps-press-1.jpg" data-image2="images/products/single-station/versa-triceps-press-2.jpg" data-itemheading="Versa Triceps Press" data-itemdesc="Help your users tone and refine the triceps muscles with the smart design of the Versa Triceps Press. Rotating handles adapt to users of all sizes. An angled back pad reduces stress and improves stabilization and comfort. The 5-pound incremental weight is easily accessible from the seated position." alt="">
+                                    <span class="item-name">Versa Triceps Press</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/versa-back-extension-1.jpg" data-image2="images/products/single-station/versa-back-extension-2.jpg" data-image3="images/products/single-station/versa-back-extension-3.jpg" data-itemheading="Versa Back Extension" data-itemdesc="The smart design of our Versa Back Extension makes targeting the lower back muscles comfortable and efficient. It includes an ergonomically contoured back pad, plus multi-position foot placement to accommodate a variety of users." alt="">
+                                    <span class="item-name">Versa Back Extension</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/versa-abdominal-1.jpg" data-image2="images/products/single-station/versa-abdominal-2.jpg" data-image3="images/products/single-station/versa-abdominal-3.jpg" data-image4="images/products/single-station/versa-abdominal-4.jpg" data-itemheading="Versa Abdominal" data-itemdesc="Our Versa Abdominal station features a versatile three-position design to focus on abs, obliques and core rotation. It includes an ergonomic back pad for improved range of motion and comfort." alt="">
+                                    <span class="item-name">Versa Abdominal</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/versa-leg-press-calf-press-1.jpg" data-image2="images/products/single-station/versa-leg-press-calf-press-2.jpg" data-itemheading="Versa Leg Press /Calf Press" data-itemdesc="The versatile design of our Versa Leg Press / Calf Press station makes building and toning major leg muscles more efficient and comfortable than ever. A low step-over height and an assistance handle offer easy access for virtually anyone. One-handed adjustments make getting started quick, while an air-shock assisted foot platform makes every adjustment smooth. Additionally, the footplate includes unique visual indicators to help optimize foot placement." alt="">
+                                    <span class="item-name">Versa Leg Press /Calf Press</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/versa-leg-extension-1.jpg" data-image2="images/products/single-station/versa-leg-extension-2.jpg" data-itemheading="Versa Leg Extension" data-itemdesc="Help your people focus on the major muscles of the upper leg with our efficient, comfortable Versa Leg Extension station. The angled seat and back pad encourage full quadriceps contraction, while clearly marked pivot points optimize user alignment. A self-adjusting tibia pad provides comfortable support, and the back pad easily adjusts from a seated position." alt="">
+                                    <span class="item-name">Versa Leg Extension</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/versa-seated-leg-curl-1.jpg" data-image2="images/products/single-station/versa-seated-leg-curl-2.jpg" data-itemheading="Versa Seated Leg Curl" data-itemdesc="Make toning and building major leg muscles more comfortable and efficient with our Versa Seated Leg Curl. It offers a full range of motion for leg extensions and hamstring curls, plus an angled seat and optimized pivot point to encourage full hamstring contraction. The comfort-enhancing thigh pad, back pad and tibia pad are all easily adjustable from a seated position." alt="">
+                                    <span class="item-name">Versa Seated Leg Curl</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/versa-hip-abductor-adductor-1.jpg" data-image2="images/products/single-station/versa-hip-abductor-adductor-2.jpg" data-itemheading="Versa Hip Abductor /Adductor" data-itemdesc="Offer your people more functionality in less space with our Versa Hip Abductor / Adductor dual station. It transitions smoothly from one exercise to the other, and clearly indicated adjustment points make it easy for virtually anyone to get comfortable and get started. It even includes a reclined position to maximize lumbar support during workouts." alt="">
+                                    <span class="item-name">Versa Hip Abductor /Adductor</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/versa-glute-1.jpg" data-image2="images/products/single-station/versa-glute-2.jpg" data-image3="images/products/single-station/versa-glute-3.jpg" data-itemheading="Versa Glute" data-itemdesc="Building and toning glutes has always been popular, but it’s never been as accessible and comfortable as it is with our Versa Glute station. The upright user position and the low step-on height of the stabilization platform make it easy for users to get started. The chest pad adjusts to encourage proper body positioning, while the contoured elbow pads and large foot pad enhance comfort." alt="">
+                                    <span class="item-name">Versa Glute</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/versa-multi-press-1.jpg" data-image2="images/products/single-station/versa-multi-press-2.jpg" data-itemheading="Versa Multi Press" data-itemdesc="Our Versa Multi-Press station makes building and toning major upper-body muscles accessible, efficient and comfortable. It’s specifically designed for easy entry and exit, and the dual-position grips provide excellent training variety. It includes clearly indicated adjustment points for easy use, a reclined position to maximize lumbar support and elevated footrests for superior stability and comfort during heavy lifts." alt="">
+                                    <span class="item-name">Versa Multi Press</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/versa-combo-lat-pulldown-seated-row-1.jpg" data-image2="images/products/single-station/versa-combo-lat-pulldown-seated-row-2.jpg" data-itemheading="Versa Combo Lat Pulldown /Seated Row" data-itemdesc="Maximize the functionality of your space with the smart, versatile design of our the Versa Lat Pulldown / Seated Row dual station. The thigh pad easily adjusts to provide stability and comfort when building and toning major back muscles, and clearly indicated adjustment points make it easy for virtually anyone to get started. Elevated footrests provide added stability during heavy lifts, and stainless-steel cables offer lasting durability in hard-use environments." alt="">
+                                    <span class="item-name">Versa Combo Lat Pulldown /Seated Row</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/versa-bicep-tricep-1.jpg" data-image2="images/products/single-station/versa-bicep-tricep-2.jpg" data-itemheading="Versa Bicep /Tricep" data-itemdesc="Help your users tone and refine the muscles of their arms with the smart design of our Versa Biceps / Triceps dual station. Clearly indicated adjustments make use intuitive for virtually anyone, while the foot platform offers excellent stability. Count on the stainless-steel cable guides to provide lasting durability, even in the busiest environments." alt="">
+                                    <span class="item-name">Versa Bicep /Tricep</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/versa-ab-low-back-1.jpg" data-image2="images/products/single-station/versa-ab-low-back-2.jpg" data-itemheading="Versa Ab /Low Back" data-itemdesc="Designed for efficiency and versatility, our Versa Ab / Low Back station makes a great core workout accessible to virtually anyone. An angled seat and lumbar pad make use comfortable, while low handle positioning offers easy entry, easy exit and enhanced stability. Clearly indicated adjustments make use intuitive, and multi-position foot placement accommodates a variety of users." alt="">
+                                    <span class="item-name">Versa Ab /Low Back</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/versa-chin-dip-assist-1.jpg" data-image2="images/products/single-station/versa-chin-dip-assist-2.jpg" data-itemheading="Versa Chin /Dip Assist" data-itemdesc="Our Versa Chin / Dip Assist station packs a remarkable range of functionality into a space-efficient footprint. Multi-position pull-up handles offer exercise variety, and ideally angled dip grips encourage proper wrist placement and muscle variation. The gas-assisted knee platform even folds up for unassisted bodyweight exercises. Clearly indicated, conveniently located adjustment points make use intuitive and provide users with a hard stop to help prevent injury. The knee platform features a protective top pad for stability, while the large, textured foot platforms make it easy to get on and off." alt="">
+                                    <span class="item-name">Versa Chin /Dip Assist</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/versa-leg-extension-leg-curl-1.jpg" data-image2="images/products/single-station/versa-leg-extension-leg-curl-2.jpg" data-itemheading="Versa Leg Extension /Leg Curl" data-itemdesc="Help your users tone and refine the muscles of their legs with the smart design of our Versa Leg Extension/ Leg Curl dual station. Clearly indicated, conveniently located adjustment points make use intuitive and provide users with a hard stop to help prevent injury. Dual-action CAM enables a smooth transition between exercises. Back pad ratchets forward for easy adjustment from the seated position. Angled pads and ideal pivot location promote full muscle contraction and alignment." alt="">
+                                    <span class="item-name">Versa Leg Extension /Leg Curl</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/versa-medical-adjustable-pully.jpg" data-itemheading="Versa Medical Adjustable Pulley" data-itemdesc="The Versa Adjustable Pulley features low starting weight and incremental weight changes, helping injured or deconditioned clients get started and progress quickly. Single-handed height adjustment allows for easy transition between 35 clearly numbered adjustment points, providing maximum training versatility." alt="">
+                                    <span class="item-name">Versa Medical Adjustable Pulley</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/versa-medical-leg-press-1.jpg" data-image2="images/products/single-station/versa-medical-leg-press-2.jpg" data-image3="images/products/single-station/versa-medical-leg-press-3.jpg" data-itemheading="Versa Medical Leg Press" data-itemdesc="The Versa Medical Leg Press features a carriage lockout and gas-assisted foot platform, allowing medical professionals to quickly and easily change or restrict the range of motion to prevent overextension. Integration of band hooks increases exercise variation and training style by introducing elastic resistance to rehabilitation and progression programs." alt="">
+                                    <span class="item-name">Versa Medical Leg Press</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 single-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/single-station/versa-medical-leg-extension-leg-curl-1.jpg" data-image2="images/products/single-station/versa-medical-leg-extension-leg-curl-2.jpg" data-itemheading="Versa Medical Leg Extension /Leg Curl" data-itemdesc="The Versa Leg Extension/ Leg curl features a low starting weight and incremental weight changes, helping injured or deconditioned clients get started and progress quickly. Range-of-motion limiter restricts the stroke for isometric contractions and protects clients from overextending." alt="">
+                                    <span class="item-name">Versa Medical Leg Extension /Leg Curl</span>
+                                </div></a>
+                            </div>
+                            <!--=====================================multi-station====================================-->
+                            <div class="col-6 col-sm-4 col-lg-3 multi-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/multi-station/magnum-adjustable-pulley-1.jpg" data-image2="images/products/multi-station/magnum-adjustable-pulley-2.jpg" data-itemheading="Magnum Adjustable Pulley" data-itemdesc="" alt="">
+                                    <span class="item-name">Magnum Adjustable Pulley</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 multi-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/multi-station/aura-4-stack-multi-station-1.jpg" data-image2="images/products/multi-station/aura-4-stack-multi-station-2.jpg" data-itemheading="Aura 4-Stack Multi Station" data-itemdesc="Meet the strength training needs of multiple users and maximize training options with customized Aura Multi-Stations. Our 4-stack configuration allows you to integrate four configurable stations of your choice including Adjustable Pulley (MS24), Lat Pulldown (MS51), Triceps Press (MS52) and / or Low Row (MS53). The Low Row and Lat Pulldown feature dual pulleys for a greater exercise variety, and a bottle and towel holder keep essential accessories easily accessible. In addition to offering a unique aesthetic distinction that attracts more users, our round-tube construction with automotive-quality powder-coat finish provides lasting strength and durability." alt="">
+                                    <span class="item-name">Aura 4-Stack Multi Station</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 multi-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/multi-station/aura-5-stack-multistation-1.jpg" data-image2="images/products/multi-station/aura-5-stack-multistation-2.jpg" data-image3="images/products/multi-station/aura-5-stack-multistation-3.jpg" data-itemheading="Aura 5-Stack Multi Station" data-itemdesc="Meet the strength training needs of multiple users and maximize training options with customized Aura Multi-Stations. Our 5-stack design integrates three configurable stations of your choice, including Adjustable Pulley (MS24), Lat Pulldown (MS51), Triceps Press (MS52) and / or Low Row (MS53). It includes two Adjustable Pulleys (MS24) connected by a crossover bar with an integrated pullup bar. The Low Row and Lat Pulldown feature dual pulleys for a wide variety of smooth-moving exercises, and a bottle and towel holder keep essential accessories easily accessible. In addition to offering a unique aesthetic distinction that attracts more users, our round-tube construction with automotive-quality powder-coat finish provides lasting strength and durability." alt="">
+                                    <span class="item-name">Aura 5-Stack Multi Station</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 multi-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/multi-station/aura-8-stack-multi-station-1.jpg" data-image2="images/products/multi-station/aura-8-stack-multi-station-2.jpg" data-image3="images/products/multi-station/aura-8-stack-multi-station-3.jpg" data-itemheading="Aura 8-Stack Multi Station" data-itemdesc="Meet the strength training needs of multiple users and maximize training options with customized Aura Multi-Stations. Our 8-stack design integrates six configurable stations of your choice, including Adjustable Pulley (MS24), Lat Pulldown (MS51), Triceps Press (MS52) and / or Low Row (MS53). It includes two Adjustable Pulleys (MS24) connected by a crossover bar with an integrated pullup bar. The Low Row and Lat Pulldown feature dual pulleys for greater exercise variety, and a bottle and towel holder keep essential accessories easily accessible. In addition to offering a unique aesthetic distinction that attracts more users, our round-tube construction with automotive-quality powder-coat finish provides lasting strength and durability." alt="">
+                                    <span class="item-name">Aura 8-Stack Multi Station</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 multi-station">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/multi-station/versa-functional-trainer-w-30-storage-1.jpg" data-image2="images/products/multi-station/versa-functional-trainer-w-30-storage-2.jpg" data-image3="images/products/multi-station/versa-functional-trainer-w-30-storage-3.jpg" data-image4="images/products/multi-station/versa-functional-trainer-w-30-storage-4.jpg" data-itemheading='Versa Functional TRainer W/30" Storage' data-itemdesc="The smart design of our functional trainer provides a remarkable range of exercise options in a space-saving footprint. Incremental weight adjustment and a 1:2 pulley ratio make it easy to control exercise intensity and create progressions right for everyone from deconditioned users to elite athletes. Everything about our functional trainer — from the multi-grip pull-up bar to the color-coded adjustment points to the professionally illustrated exercise placards — offers intuitive operation for users and trainers alike. Optional storage makes it easy to organize and stow accessories for instant access, and the completely enclosed design protects moving parts while creating a solid, cohesive aesthetic on your floor. A 76 cm / 30" connection provides ample storage for functional training accessories. Options include VS-VFT60 heavy stack for an additional 27.2 kg / 60 lbs. of resistance per side, VS-FTHP handle package with four training handles (v-bar, curl bar, ropes, ankle strap) and VS-FTIW 2.2-kg / 5-lb. incremental weight." alt="">
+                                    <span class="item-name">Versa Functional TRainer W/30" Storage</span>
+                                </div></a>
+                            </div>
+                            
+                            <!--======================================free weights===============================-->
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-back-extension-bench-1.jpg" data-image2="images/products/free-weights/magnum-back-extension-bench-2.jpg" data-image3="images/products/free-weights/magnum-back-extension-bench-3.jpg" data-image4="images/products/free-weights/magnum-back-extension-bench-4.jpg" data-itemheading="Magnum Back Extension Bench" data-itemdesc="The Magnum Back Extension Bench is designed for improving abdominal, back and other core muscles. Large thigh pads and a skid-resistant foot platform provide added stability and comfort. Additionally, the bench is angled for easy entry and exit." alt="">
+                                    <span class="item-name">Magnum Back Extension Bench</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-olympic-weight-tree.jpg" data-itemheading="Magnum Olympic Weight Tree" data-itemdesc="" alt="">
+                                    <span class="item-name">Magnum Olympic Weight Tree</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-olympic-shoulder-bench-1.jpg" data-image2="images/products/free-weights/magnum-olympic-shoulder-bench-2.jpg" data-itemheading="Magnum Olympic Shoulder Bench" data-itemdesc="The Magnum Olympic Shoulder Bench allows for front and rear takeoffs connected with a bottom stop bar. A total of 10 weight-storage horns make room for 20.4-kg / 45-lb. plates stored at waist height. Molded urethane guards protect Olympic bars from damage, reduce noise and provide a hand rest for spotters. The frame features a proprietary two-coat powder finish for long-lasting durability. Comes standard with built-in spotter platform (MG-AOSP). Designed to meet EN957 and ASTM safety standards." alt="">
+                                    <span class="item-name">Magnum Olympic Shoulder Bench</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-breaker-olympic-shoulder-bench-1.jpg" data-image2="images/products/free-weights/magnum-breaker-olympic-shoulder-bench-2.jpg" data-itemheading="Magnum Breaker Olympic Shoulder Bench" data-itemdesc="The Magnum Breaker Olympic Shoulder Bench features unique pivoting uprights for greater comfort, easier takeoffs and increased efficiency. A total of 10 weight-storage horns make room for 20.4-kg / 45-lb. plates stored at waist height. Molded urethane guards protect Olympic bars from damage, reduce noise and provide a hand rest for spotters. The frame features a proprietary two-coat powder finish for long-lasting durability. Designed to meet EN957 and ASTM safety standards." alt="">
+                                    <span class="item-name">Magnum Breaker Olympic Shoulder Bench</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-olympic-flat-bench-1.jpg" data-image2="images/products/free-weights/magnum-olympic-flat-bench-2.jpg" data-itemheading="Magnum Olympic Flat Bench" data-itemdesc="The Magnum Olympic Flat Bench is designed to support a wide variety of strength training exercises. Pivoting knee rests comfortably accommodate users of all sizes, and a wide back pad stabilizes users during heavy lifts. A total of 10 weight-storage horns make room for 20.4-kg / 45-lb. plates stored at waist height. Molded urethane guards protect Olympic bars from damage, reduce noise and provide a hand rest for spotters. The frame features a proprietary two-coat powder finish for long-lasting durability." alt="">
+                                    <span class="item-name">Magnum Olympic Flat Bench</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-breaker-olympic-flat-bench-1.jpg" data-image2="images/products/free-weights/magnum-breaker-olympic-flat-bench-2.jpg" data-image3="images/products/free-weights/magnum-breaker-olympic-flat-bench-3.jpg" data-image4="images/products/free-weights/magnum-breaker-olympic-flat-bench-4.jpg" data-image5="images/products/free-weights/magnum-breaker-olympic-flat-bench-5.jpg" data-itemheading="Magnum Breaker Olympic Flat Bench" data-itemdesc="The Magnum Olympic Flat Bench is designed to support a wide variety of strength training exercises. Pivoting knee rests comfortably accommodate users of all sizes, and a wide back pad stabilizes users during heavy lifts. A total of 10 weight-storage horns make room for 20.4-kg / 45-lb. plates stored at waist height. Molded urethane guards protect Olympic bars from damage, reduce noise and provide a hand rest for spotters. The frame features a proprietary two-coat powder finish for long-lasting durability." alt="">
+                                    <span class="item-name">Magnum Breaker Olympic Flat Bench</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-olympic-incline-bench-1.jpg" data-image2="images/products/free-weights/magnum-olympic-incline-bench-2.jpg"  data-itemheading="Magnum Olympic Incline Bench" data-itemdesc="The Magnum Olympic Incline Bench is designed to support a wide variety of strength training exercises. A ratcheting seat design provides easy adjustment, pivoting knee rests comfortably accommodate users of all sizes, and a wide back pad stabilizes users during heavy lifts. A total of 10 weight-storage horns make room for 20.4-kg / 45-lb. plates stored at waist height. Molded urethane guards protect Olympic bars from damage, reduce noise and provide a hand rest for spotters. The frame features a proprietary two-coat powder finish for long-lasting durability. Available without weight-storage horns (MG-A79N). Unit comes standard with built-in spotter platform (MG-AOSP)." alt="">
+                                    <span class="item-name">Magnum Olympic Incline Bench</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-breaker-olympic-incline-bench-1.jpg" data-image2="images/products/free-weights/magnum-breaker-olympic-incline-bench-2.jpg" data-image3="images/products/free-weights/magnum-breaker-olympic-incline-bench-3.jpg"  data-itemheading="Magnum Breaker Olympic Incline Bench" data-itemdesc="The Magnum Breaker Olympic Flat Bench features unique pivoting uprights for greater comfort, easier takeoffs and increased efficiency. Additionally, a ratcheting seat design allows for easy adjustment and comfortable use, and a wide back pad stabilizes users during heavy lifts. A total of 10 weight-storage horns make room for 20.4-kg / 45-lb. plates stored at waist height. Molded urethane guards protect Olympic bars from damage, reduce noise and provide a hand rest for spotters. The frame features a proprietary two-coat powder finish for long-lasting durability. Comes standard with built-in spotter platform (MG-AOSP). Designed to meet EN957 and ASTM safety standards." alt="">
+                                    <span class="item-name">Magnum Breaker Olympic Incline Bench</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-olympic-decline-bench-1.jpg" data-image2="images/products/free-weights/magnum-olympic-decline-bench-2.jpg"  data-itemheading="Magnum Olympic Decline Bench" data-itemdesc="The Magnum Olympic Decline Bench is designed to enhance muscle activation while putting less stress on the shoulders and lower back. Pivoting knee rests comfortably accommodate users of all sizes, and a wide back pad stabilizes users during heavy lifts. A total of 10 weight-storage horns make room for 20.4-kg / 45-lb. plates stored at waist height. Molded urethane guards protect Olympic bars from damage, reduce noise and provide a hand rest for spotters. The frame features a proprietary two-coat powder finish for long-lasting durability." alt="">
+                                    <span class="item-name">Magnum Breaker Olympic Incline Bench</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-breaker-olympic-decline-bench-1.jpg" data-image2="images/products/free-weights/magnum-breaker-olympic-decline-bench-2.jpg"  data-itemheading="Magnum Breaker Olympic Decline Bench" data-itemdesc="The Magnum Breaker Bench angles downward to activate the pectoral muscles and includes unique pivoting uprights for greater comfort, easier takeoffs and increased efficiency. A total of 10 weight-storage horns make room for 20.4-kg / 45-lb. plates stored at waist height. Molded urethane guards protect Olympic bars from damage, reduce noise and provide a hand rest for spotters. The frame features a proprietary two-coat powder finish for long-lasting durability. Designed to meet EN957 and ASTM safety standards." alt="">
+                                    <span class="item-name">Magnum Breaker Olympic Decline Bench</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-3-way-olympic-bench-1.jpg" data-image2="images/products/free-weights/magnum-3-way-olympic-bench-2.jpg"  data-itemheading="Magnum 3-Way Olympic Bench" data-itemdesc="The Magnum 3-way Olympic Bench accommodates flat bench press, incline press and shoulder press with simple adjustments. The seat automatically moves into the proper position when the back is adjusted. Molded urethane guards protect Olympic bars from damage, reduce noise and provide a hand rest for spotters. A total of 10 weight-storage horns offers ample storage for 454 kg / 1,000 lbs. of Olympic plates. The frame features a proprietary two-coat powder finish for long-lasting durability." alt="">
+                                    <span class="item-name">Magnum 3-Way Olympic Bench</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-flat-bench-1.jpg"  data-itemheading="Magnum Flat Bench" data-itemdesc="The Magnum Flat Bench features heavy-gauge steel tubing designed to withstand rigorous strength training and support a variety of exercises. The frame features a proprietary two-coat powder finish for long-lasting durability." alt="">
+                                    <span class="item-name">Magnum  Flat Bench</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-adjustable-decline-bench-1.jpg"  data-itemheading="Magnum Adjustable Decline Bench" data-itemdesc="The Magnum Adjustable Decline Bench offers nine adjustments from 10 to 30 degrees to accommodate a variety of training exercises. Gas shock offers easy adjustment, while a wide back pad stabilizes users during heavy lifts. Integrated wheels offer easy transport. The frame includes molded guards for protection in high-traffic areas and a proprietary two-coat powder finish for long-lasting durability." alt="">
+                                    <span class="item-name">Magnum Adjustable Decline Bench</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-preacher-curl-1.jpg"  data-itemheading="Magnum Preacher Curl" data-itemdesc="The Magnum Preacher Curl is designed target and activate specific muscle groups in the arms. It features an ergonomically angled, ratcheting seat for proper body positioning, plus durable extruded guards to protect the frame and bar in tough training environments. The frame features a proprietary two-coat powder finish for long-lasting durability." alt="">
+                                    <span class="item-name">Magnum Preacher Curl</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-vkr-w-chin.jpg"  data-itemheading="Magnum VKR W/Chin" data-itemdesc="Designed for training versatility, the Magnum VKR with Chin lets users take on a wide range of exercises for strengthening shoulders, arms, back and core muscles. Additionally, multiple chin grips and rock-climbing grips allow for added exercise variety. An angled back support, elbow pads and handles enhance stability and comfort, while oversized round handles provide added comfort on dips. The frame features a proprietary two-coat powder finish for long-lasting durability." alt="">
+                                    <span class="item-name">Magnum VKR W/Chin</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-weight-tree-w-bar-holder-1.jpg" data-image2="images/products/free-weights/magnum-weight-tree-w-bar-holder-2.jpg"  data-itemheading="Magnum Weight Tree W/Bar Holders" data-itemdesc="The Magnum Weight Tree w/ Bar Holder provides a safe and aesthetically pleasing storage solution. It includes six chrome storage horns, two of which accommodates 20 kg / 45 lbs. plates, plus two vertical bar holders for storing Olympic or curl bars. Rubber bumpers on the horns protect the proprietary two-coat powder frame finish for long-lasting durability." alt="">
+                                    <span class="item-name">Magnum Weight Tree W/Bar Holders</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-standing-arm-curl.jpg" data-itemheading="Magnum Standing Arm Curl" data-itemdesc="Ideal for exercises focusing on the upper body, the Magnum Standing Arm Curl features arm pad height adjustment to comfortably accommodate users of all sizes. To maximize functionality and save space, both sides of unit can be used at once. It includes durable extruded guards to protect the frame and bar in tough training environments, and the frame features a proprietary two-coat powder finish for long-lasting durability." alt="">
+                                    <span class="item-name">Magnum Standing Arm Curl</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-adjustable-ab-bench.jpg" data-itemheading="Magnum Adjustable Ab Bench" data-itemdesc="The Magnum Adjustable Ab Bench accommodates a variety of abdominal workouts. The elevated knee position reduces low-back stress, while the back-support pivots to six different positions from zero to 25 degrees. An adjustable leg pad comfortably accommodates users of all sizes. The frame includes molded guards for protection in high-traffic areas and a proprietary two-coat powder finish for long-lasting durability." alt="">
+                                    <span class="item-name">Magnum Adjustable Ab Bench</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-squat-rack.jpg" data-itemheading="Magnum Squat Rack" data-itemdesc="The Magnum Squat Rack features multiple racking positions for excellent exercise flexibility. It includes eight weight horns for ample plate storage. The frame features a proprietary two-coat powder finish for long-lasting durability." alt="">
+                                    <span class="item-name">Magnum Squat Rack</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-multi-adjustable-bench-lp-1.jpg" data-image2="images/products/free-weights/magnum-multi-adjustable-bench-lp-2.jpg" data-image3="images/products/free-weights/magnum-multi-adjustable-bench-lp-3.jpg" data-image4="images/products/free-weights/magnum-multi-adjustable-bench-lp-4.jpg" data-image5="images/products/free-weights/magnum-multi-adjustable-bench-lp-5.jpg" data-itemheading="Magnum Multi Adjustable Bench LP" data-itemdesc="The Magnum Multi-adjustable Bench is designed for maximum flexibility and comfort. The low 46 cm / 17.8 inch floor - to - bench height minimizes lower back stress and prevents arching. The bench allows for eight levels of angle adjustment to maximize exercise variety(0–75 degrees). The seat and back pad move in unison, minimizing adjustments and providing the perfect seat - to - pad angle at each setting. A design featuring less than 2.5 cm / 1 inch of space between seat and back pad enhances comfort. The back pad offers increased width at the shoulders to provide added stability during lifts. Additionally, the back pad is bolted to the frame’s center to enhance support and stability while preventing pad flex. It includes bolted - on end caps with frame covers to protect against wear and tear, plus transport wheels and an ergonomic handle for easy portability. Rated for a maximum user weight of 185.75 kg or 350 lbs. and a maximum training weight of 272 kg or 600 lbs." alt="">
+                                    <span class="item-name">Magnum Multi Adjustable Bench LP</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-multi-adjustable-bench.jpg" data-itemheading="Magnum Multi Adjustable bench" data-itemdesc="The Magnum Multi-adjustable Bench is designed for maximum flexibility and comfort. The bench allows for five levels of angle adjustment to maximize exercise variety (0– 80 degrees).The seat and back pad move in unison, minimizing adjustments and providing the perfect seat - to - pad angle at each setting. The back pad offers increased width at the shoulders to provide added stability during lifts. Additionally, the back pad is bolted to the frame’s center to enhance support and stability while preventing pad flex. It includes bolted - on end caps with frame covers to protect against wear and tear. Rated for a maximum user weight of 159 kg / 350 lbs. and a maximum training weight of 136 kg / 300 lbs." alt="">
+                                    <span class="item-name">Magnum Multi Adjustable bench</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-multi-adjustable-bench-w-decline-1.jpg" data-image2="images/products/free-weights/magnum-multi-adjustable-bench-w-decline-2.jpg" data-image3="images/products/free-weights/magnum-multi-adjustable-bench-w-decline-3.jpg" data-image4="images/products/free-weights/magnum-multi-adjustable-bench-w-decline-4.jpg" data-image5="images/products/free-weights/magnum-multi-adjustable-bench-w-decline-5.jpg" data-itemheading="Magnum Multi Adjustable Bench W/Decline" data-itemdesc="With a backrest that adjusts to seven positions marked in degrees, the Magnum Multi-adjustable Bench with Decline supports a variety of training exercises. The wide back pad stabilizes users during heavy lifts, while the leg pads provide added comfort and stability. It includes molded guards to protect it from damage in tough training environments, plus a proprietary two-coat powder frame finish for long-lasting durability. Additionally, integrated wheels offer easy of transport within facility." alt="">
+                                    <span class="item-name">Magnum Multi Adjustable Bench W/Decline</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-utility-bench.jpg" data-itemheading="Magnum Utility bench" data-itemdesc="The oversized foot support and rubber foot platforms of the Magnum Utility Bench provide maximum stability. Protective molded guards prevent scuffs in high-traffic areas. Integrated wheels allow for easy transport, and the frame features a proprietary two-coat powder finish for long-lasting durability." alt="">
+                                    <span class="item-name">Magnum Utility bench</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-glute-ham-bench.jpg" data-itemheading="Magnum Glute Ham bench" data-itemdesc="Ideal for glute and hamstring exercises, the Magnum Glute / Ham bench features band hooks and handles for performing reverse hyperextensions. The leg pads feature easy gas-assisted vertical adjustment, and the oversized footplate can be adjusted while the user is in position. A step-through design allows for easy entry and exit, and the frame features a proprietary two-coat powder finish for long-lasting durability." alt="">
+                                    <span class="item-name">Magnum Glute Ham bench</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-accessory-rack-1.jpg" data-image2="images/products/free-weights/magnum-accessory-rack-2.jpg" data-itemheading="Magnum Accessory Rack" data-itemdesc="" alt="">
+                                    <span class="item-name">Magnum Accessory Rack</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-barebell-rack-1.jpg" data-image2="images/products/free-weights/magnum-barebell-rack-2.jpg" data-itemheading="Magnum Barebell Rack" data-itemdesc="The Magnum Barbell Rack provides a stylish, space-saving storage solution for up to 10 barbells. It includes a max weight per shelf of 50 kg / 110 lbs. and a max overall weight of 294 kg / 650 lbs. The frame features a proprietary two-coat powder finish for long-lasting durability." alt="">
+                                    <span class="item-name">Magnum Barebell Rack</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-5-piar-pro-style-dumbell-rack.jpg" data-itemheading="Magnum 5-Pair Pro-Style Dumbbel Rack" data-itemdesc="The Magnum 5-pair Pro-style Dumbbell Rack provides dumbbell storage space for five pairs of pro-style dumbbells up to 68 kg / 150 lbs. with a max storage weight of 635 kg / 1,400 lbs. The walk-up design makes accessing heavy dumbbells easier, while the 15-degree angled trays help prevent wrist strain when removing and replacing dumbbells. Dumbbell cradles and a solid tray design provide stability and secure storage in the most rigorous training environments. Tubular construction offers lasting strength and durability along with a distinctive aesthetic. Bolt-down tabs located on the front of each leg provide added stability. Available options include a decal sheet (MG-AODS) and a connector plate (MG-AOCP) that lets you connect multiple racks." alt="">
+                                    <span class="item-name">Magnum 5-Pair Pro-Style Dumbbel Rack</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-10-pair-pro-style-dumbbell-rack.jpg" data-itemheading="Magnum 10-Pair Pro-Style Dumbbel Rack" data-itemdesc="The Magnum 10-pair Pro-style Dumbbell Rack provides two tiers of storage space for 10 pairs of pro-style dumbbells up to 68 kg / 150 lbs. The 15-degree angled tray helps prevent wrist strain when removing and replacing dumbbells. Dumbbell cradles and a solid tray design provide stability and secure storage in the most rigorous training environments. Tubular construction offers lasting strength and durability along with a distinctive aesthetic. Bolt-down tabs located on the front of each leg provide added stability." alt="">
+                                    <span class="item-name">Magnum 10-Pair Pro-Style Dumbbel Rack</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-15-pair-pro-style-dumbbell-rack.jpg" data-itemheading="Magnum 15-Pair Pro-Style Dumbbel Rack" data-itemdesc="The Magnum 15-pair Pro-style Dumbbell Rack provides three tiers of storage space for 15 pairs of pro-style dumbbells up to 68 kg / 150 lbs. The 15-degree angled trays help prevent wrist strain when removing and replacing dumbbells. Dumbbell cradles and a solid tray design provide stability and secure storage in the most rigorous training environments. Tubular construction offers lasting strength and durability along with a distinctive aesthetic. Bolt-down tabs located on the front of each leg provide added stability." alt="">
+                                    <span class="item-name">Magnum 15-Pair Pro-Style Dumbbel Rack</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-2-tier-flat-tray-dumbbell-rack.jpg" data-itemheading='Magnum 2-Tier Flat-Tray Dumbbel Rack (231cm/91")' data-itemdesc="Designed to hold hex dumbbells, the Magnum 2-tier Flat-tray Dumbbell Rack holds a max hex head dumbbell weight of 52 kg / 115 lbs. The 15-degree angled trays help prevent wrist strain when removing and replacing dumbbells. Dumbbell cradles and a solid tray design provide stability and secure storage in the most rigorous training environments. Tubular construction offers lasting strength and durability along with a distinctive aesthetic. Bolt-down tabs located on the front of each leg provide added stability. Available options include 15-degree-to-flat adapters for Kettlebell storage (MG-AO15T for top tray, MG-AOT5B for bottom tray), rubber mat tray inserts to protect the rack when using metal dumbbells or kettlebells ( MG-AORM6 for MG-A526 dumbbell rack, MG-AORM8 for MG-A528 dumbbell rack), decal sheet (MG-AODS) and a connector plate (MG-AOCP) that lets you connect multiple racks." alt="">
+                                    <span class="item-name">Magnum 2-Tier Flat-Tray Dumbbel Rack (231cm/91")</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-3-tier-flat-tray-dumbbell-rack.jpg" data-itemheading='Magnum 3-Tier Flat-Tray Dumbbel Rack (231cm/91")' data-itemdesc="Designed to hold hex dumbbells, the Magnum 3-tier Flat-tray Dumbbell Rack saves space and provides secure storage. It offers a max storage weight of 193 kg / 424.6 lbs., while the rack holds a max hex head dumbbell weight of 52 kg / 115 lbs. The 15-degree angled trays help prevent wrist strain when removing and replacing dumbbells, and the covered front tray edge protects rubber dumbbells from damage. Tubular construction offers lasting strength and durability along with a distinctive aesthetic. Bolt-down tabs located on the front of each leg provide added stability. Available options include 15-degree-to-flat adapters for kettlebell storage (MG-AO15T for top tray, MG-AOT5B for bottom tray), rubber mat tray inserts to protect the rack when using metal dumbbells or kettlebells (MG-AORM6 for MG-A526 dumbbell rack, MG-AORM8 for MG-A528 dumbbell rack), decal sheet (MG-AODS) and connector plate (MG-AOCP) that allows you to connect multiple racks." alt="">
+                                    <span class="item-name">Magnum 3-Tier Flat-Tray Dumbbel Rack (231cm/91")</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-10-pair-studio-pro-style-dumbbell-rack.jpg" data-itemheading="Magnum 10-Pair Studio Pro-Style Dumbbel Rack" data-itemdesc="The three-tiered design of the Magnum 10-pair Studio Pro-style Dumbbell Rack uses less space than a traditional 10-pair, two-tiered rack. It offers storage space for 10 pairs of pro-style dumbbells from 2–20 kg / 5–50 lbs. The 15-degree angled trays help prevent wrist strain when removing and replacing dumbbells. Dumbbell cradles and a solid tray design provide stability and secure storage in the most rigorous training environments. Tubular construction offers lasting strength and durability along with a distinctive aesthetic. Bolt-down tabs located on the front of each leg provide added stability." alt="">
+                                    <span class="item-name">Magnum 10-Pair Studio Pro-Style Dumbbel Rack</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 fr-weights">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/free-weights/magnum-stepup-platform-w-handle.jpg" data-itemheading="Magnum Step-Up Platform W/Handle" data-itemdesc='The Magnum Step-up Platform with Handle features a 20 cm / 8" step - up height optimized to strengthen the lower body.The built - in handle provides added user stability.' alt="">
+                                    <span class="item-name">Magnum Step-Up Platform W/Handle</span>
+                                </div></a>
+                            </div>
+                            <!--========================================plate loaded==================-->
+                            <div class="col-6 col-sm-4 col-lg-3 plate-loaded">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/plate-loaded/magnum-vertical-benchpress-1.jpg" data-image2="images/products/plate-loaded/magnum-vertical-benchpress-2.jpg" data-itemheading="Magnum Vertical Bench Press" data-itemdesc="Our Magnum Vertical Bench Press takes upper-body strength to the next level. It includes converging independent arms for a natural path of motion, dual grip positions for greater training variety, an adjustable back pad to alter range of motion and a ratcheting seat for easy adjustment. Four storage horns provide ample room for plates." alt="">
+                                    <span class="item-name">Magnum Vertical Bench Press</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 plate-loaded">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/plate-loaded/magnum-supine-benchpress-1.jpg" data-image2="images/products/plate-loaded/magnum-supine-benchpress-2.jpg" data-itemheading="Magnum Supine Bench Press" data-itemdesc="Tone and build pectorals with our Magnum Supine Bench. Converging independent arms provide a natural path of motion, while dual grip positions offer greater training variety. Two storage horns provide ample room for plates." alt="">
+                                    <span class="item-name">Magnum Supine Bench Press</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 plate-loaded">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/plate-loaded/magnum-incline-benchpress-1.jpg" data-image2="images/products/plate-loaded/magnum-incline-benchpress-2.jpg" data-itemheading="Magnum Incline Bench Press" data-itemdesc="Our Magnum Incline Bench Press is designed for a variety of exercises including free weights and dumbbells. It offers a natural independent converging motion and a ratcheting seat to quickly and easily adjust to different body types. The back pad adjusts to alter range of motion, and dual-grip pressing positions offer greater training variety. Four storage horns provide ample room for plates." alt="">
+                                    <span class="item-name">Magnum Incline Bench Press</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 plate-loaded">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/plate-loaded/magnum-vertical-decline-benchpress.jpg" data-itemheading="Magnum Vertical Decline Bench Press" data-itemdesc="For a more complete upper-body workout, make sure our Magnum Vertical Decline Bench Press is part of your offering. It includes converging independent arms for a natural path of motion, dual grip positions for greater training variety, an adjustable back pad to alter range of motion and a ratcheting seat for easy adjustment. Four storage horns provide ample room for plates." alt="">
+                                    <span class="item-name">Magnum Vertical Decline Bench Press</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 plate-loaded">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/plate-loaded/magnum-shoulder-press.jpg" data-itemheading="Magnum Shoulder Press" data-itemdesc="Featuring an independent converging movement that encourages a natural path of motion, the Magnum Shoulder Press maximizes strength in the shoulders and arms. A slightly reclined position reduces lower back strain, dual grip pressing positions offer greater training variety, and the ratcheting seat easily adjusts to fit different body types. Four storage horns provide ample room for plates." alt="">
+                                    <span class="item-name">Magnum Shoulder Press</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 plate-loaded">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/plate-loaded/magnum-lat-pulldown-1.jpg" data-image2="images/products/plate-loaded/magnum-lat-pulldown-2.jpg" data-itemheading="Magnum Lat Pulldown" data-itemdesc="Engineered for efficiency and comfort, our Magnum Lat Pulldown features diverging independent arms that provide a natural path of motion. The easily adjustable thigh pad provides excellent support, and an angled seat cues optimal user positioning. Two storage horns provide ample room for plates." alt="">
+                                    <span class="item-name">Magnum Lat Pulldown</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 plate-loaded">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/plate-loaded/magnum-seated-row-1.jpg" data-image2="images/products/plate-loaded/magnum-seated-row-2.jpg" data-itemheading="Magnum Seated Row" data-itemdesc="Our Magnum Seated Row is designed to maximize strength in the muscles of the back and shoulders. Diverging independent arms provide a natural path of motion, while dual grip positions offer greater training variety. Two different foot positions and an easily adjustable ratcheting seat accommodate a wide variety of user heights. Weight storage horn provides ample room for plates." alt="">
+                                    <span class="item-name">Magnum Seated Row</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 plate-loaded">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/plate-loaded/magnum-ab-crunch-bench-1.jpg" data-image2="images/products/plate-loaded/magnum-ab-crunch-bench-2.jpg" data-image3="images/products/plate-loaded/magnum-ab-crunch-bench-3.jpg" data-itemheading="Magnum Ab Crunch Bench" data-itemdesc="The refined design of our Magnum Ab Crunch Bench features dual-action pivot motions to recreate a natural, biomechanically sound abdominal crunch. A low step-through height offers easy entry and exit, angled handles enhance comfort and reduce shoulder strain, and a center tube supports heavier individuals. The weight horn even makes room for 12-kg / 25-lb. plates to accommodate the most demanding users." alt="">
+                                    <span class="item-name">Magnum Ab Crunch Bench</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 plate-loaded">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/plate-loaded/magnum-smith-machine.jpg" data-itemheading="Magnum Smith Machine" data-itemdesc="Our Magnum Smith Machine features a 90-degree path of motion that adapts to a full spectrum of exercises. Linear bearings provide smooth movement when squatting and pressing, while a counter-balanced, 11.3 kg / 25 lb. bar takeoff offers low starting resistance. Eight storage horns provide ample room for plates." alt="">
+                                    <span class="item-name">Magnum Smith Machine</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 plate-loaded">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/plate-loaded/magnum-45-deg-legpress-1.jpg" data-image2="images/products/plate-loaded/magnum-45-deg-legpress-2.jpg" data-image3="images/products/plate-loaded/magnum-45-deg-legpress-3.jpg" data-itemheading="Magnum 45-Degree Leg Press" data-itemdesc="Our Magnum 45-Degree Leg Press targets the quadriceps and glutes with efficient movements. An adjustable bottom stop provides long or short ranges of motion for users of all heights, and an adjustable back pad enhances comfort while optimizing the angle of the hips and accommodating a variety of body types. It includes an easy-to-use racking mechanism, platform handles for easier entry and exit and linear bearings for a smoother feel. Six integrated weight horns hold multiple plate sizes." alt="">
+                                    <span class="item-name">Magnum 45-Degree Leg Press</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 plate-loaded">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/plate-loaded/magnum-hack-squat.jpg" data-itemheading="Magnum Hack Squat" data-itemdesc="For a complete lower body workout, look no further than the Magnum Hack Squat. A large footplate and back pad accommodate users of all sizes, an adjustable bottom stop provides long or short ranges of motion for users of all heights, and spring-loaded takeoff handles make use easy and engaging. Four storage horns provide ample room for plates." alt="">
+                                    <span class="item-name">Magnum Hack Squat</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 plate-loaded">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/plate-loaded/magnum-standing-calf-1.jpg" data-image2="images/products/plate-loaded/magnum-standing-calf-2.jpg" data-itemheading="Magnum Standing Calf" data-itemdesc="Build strength in calves and lower leg muscles with our Magnum Standing Calf. The angled footplate provides superior grip and improves calf recruitment. Adjustable shoulder pads accommodate users of all sizes, and angled support handles enhance comfort." alt="">
+                                    <span class="item-name">Magnum Standing Calf</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 plate-loaded">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/plate-loaded/magnum-seated-calf.jpg" data-itemheading="Magnum Seated Calf" data-itemdesc="Maximize calf recruitment and comfort with our Magnum Seated Calf. A comfortably curved and angled foot pad optimizes biomechanics, and a quick-release bar catch simplifies operation. The knee pads easily adjust for tibia length and range of motion, while the seat moves with the input arm to maintain alignment." alt="">
+                                    <span class="item-name">Magnum Seated Calf</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 plate-loaded">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/plate-loaded/magnum-glute-trainer-1.jpg" data-image2="images/products/plate-loaded/magnum-glute-trainer-2.jpg" data-image3="images/products/plate-loaded/magnum-glute-trainer-3.jpg" data-image4="images/products/plate-loaded/magnum-glute-trainer-4.jpg" data-image5="images/products/plate-loaded/magnum-glute-trainer-5.jpg" data-itemheading="Magnum Glute Trainer" data-itemdesc="Glute training is more popular than ever, and you can make your fitness facility stand out by offering a better way to tone muscles and build power while improving hip and core stability. Our smart biomechanics mimic bar hip thrusting without the difficulty and discomfort of using free weights, and a walk-through design makes it easy for anyone to get started. Refined ergonomic details accommodate users of all sizes and ability levels comfortably, while high maximum resistance and elastic band hooks provide options to challenge even elite athletes. Like everything from the Magnum Series, our glute trainer’s welded design and professional-quality components are engineered and tested to stand up to heavy use in the toughest environments." alt="">
+                                    <span class="item-name">Magnum Glute Trainer</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 plate-loaded">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/plate-loaded/magnum-squat-lunge-1.jpg" data-image2="images/products/plate-loaded/magnum-squat-lunge-2.jpg" data-itemheading="Magnum Squat/Lunge" data-itemdesc="Count on our Magnum Squat / Lunge for a balanced strength training experience. Independent lifting arms and multiple hand-grip positions offer greater training variety, and four weight pegs let advanced users load up to push their limits. Three storage horns provide ample room for plates." alt="">
+                                    <span class="item-name">Magnum Squat/Lunge</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 plate-loaded">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/plate-loaded/magnum-reverse-back-extension.jpg" data-itemheading="Magnum Reverse Back Extension" data-itemdesc="Build and tone muscle in the lower back, legs, hamstrings, glutes and calves with the smart design of our Magnum Reverse Back Extension. The leg pad can be locked in forward position for use without resistance, an adjustable starting point makes it easy for each user to find the right range of motion, and dual hand grips enhance both training variety and comfort. Two storage horns provide ample room for plates." alt="">
+                                    <span class="item-name">Magnum Reverse Back Extension</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 plate-loaded">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/plate-loaded/varsity-perfect-squat.jpg" data-itemheading="Varsity Perfect Squat" data-itemdesc="" alt="">
+                                    <span class="item-name">Varsity Perfect Squat</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 plate-loaded">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/plate-loaded/varsity-leg-extension.jpg" data-itemheading="Varsity Leg Extension" data-itemdesc="" alt="">
+                                    <span class="item-name">Varsity Leg Extension</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 plate-loaded">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/plate-loaded/varsity-prone-leg-curl.jpg" data-itemheading="Varsity Prone Leg Curl" data-itemdesc="" alt="">
+                                    <span class="item-name">Varsity Prone Leg Curl</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 plate-loaded">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/plate-loaded/varsity-biceps-curl.jpg" data-itemheading="Varsity Biceps Curl" data-itemdesc="" alt="">
+                                    <span class="item-name">Varsity Biceps Curl</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 plate-loaded">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/plate-loaded/varsity-triceps-extension.jpg" data-itemheading="Varsity Triceps Extension" data-itemdesc="" alt="">
+                                    <span class="item-name">Varsity Triceps Extension</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 plate-loaded">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/plate-loaded/varsity-smith-machine.jpg" data-itemheading="Varsity Smith Machine" data-itemdesc="" alt="">
+                                    <span class="item-name">Varsity Smith Machine</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 plate-loaded">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/plate-loaded/varsity-angled-smith-machine.jpg" data-itemheading="Varsity Angled Smith Machine" data-itemdesc="" alt="">
+                                    <span class="item-name">Varsity Angled Smith Machine</span>
+                                </div></a>
+                            </div>
+                            <!--=====================racks&platforms=============================-->
+                            <div class="col-6 col-sm-4 col-lg-3 racks-platforms">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/racks&platforms/magnum-double-mega-rack.jpg" data-itemheading="Magnum Double Mega rack" data-itemdesc="Our Magnum Double MEGA Rack takes training to the max. A combination of two racks and custom connecting elements, the Double MEGA Rack lets you tailor your equipment to your facility, expanding your options by allowing more individuals to train in less space. This flexibility lets you to define your own priorities and get the most out of your investment each and every day. A height indicator and a colored locking pin make bar-level changes quick and easy, and J-hooks made of high-density polyethylene (HDPE) protect the bar knurling from scratches. Plus, the seven-gauge steel uprights and heavy-duty frames mean the Magnum Double MEGA Rack can handle your toughest users and the most rigorous workouts. Includes adjustable safety bars, dual straight chin bars, bar storage, band storage and weight storage." alt="">
+                                    <span class="item-name">Magnum Double Mega rack</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 racks-platforms">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/racks&platforms/magnum-mega-power-rack.jpg" data-itemheading="Magnum Mega Power rack" data-itemdesc="Developed specifically for power training, the efficient design of our Magnum MEGA Power Rack helps users get more out of every set and rep. A height indicator and a colored locking pin make bar-level changes quick and easy, a fully enclosed design optimizes spotting, and J-hooks made of high-density polyethylene (HDPE) protect the bar knurling from scratches. Plus, the seven-gauge steel uprights and heavy-duty frames mean the Magnum MEGA Power Rack can handle your toughest users and the most rigorous workouts. Includes three retractable lower band pegs on each side (six total)." alt="">
+                                    <span class="item-name">Magnum Mega Power rack</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 racks-platforms">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/racks&platforms/magnum-mega-half-rack.jpg" data-itemheading="Magnum Mega Half rack" data-itemdesc="Designed for training efficiency, the Magnum MEGA Half Rack provides an optimized solution to meet the demands of today's strength coaches, athletes and trainers. An open-front design gives users freedom of movement and flexibility. A height indicator and a colored locking pin make bar-level changes quick and easy, and J-hooks made of high-density polyethylene (HDPE) protect the bar knurling from scratches. Plus, the seven-gauge steel uprights and heavy-duty frames mean the Magnum MEGA Half Rack can handle your toughest users and the most rigorous workouts. Includes adjustable safety bars, dual straight chin bars, bar storage, band storage and weight storage. Includes three retractable lower band pegs on each side (six total)." alt="">
+                                    <span class="item-name">Magnum Mega Half rack</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 racks-platforms">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/racks&platforms/magnum-half-rack.jpg" data-itemheading="Magnum Half rack" data-itemdesc="Designed for training efficiency, the Magnum Half Rack provides an optimized solution to meet the demands of today's strength coaches, athletes and trainers. An open front design gives users freedom of movement, while optimizing space within a facility. Customizable with multiple rack options to meet the training needs of any facility. A height indicator and a colored locking pin make bar-level changes quick and easy, and J-hooks made of high-density polyethylene (HDPE) protect the bar knurling from scratches. Includes adjustable safety bars, dual straight chin bars, bar storage, band storage and weight storage." alt="">
+                                    <span class="item-name">Magnum Half rack</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 racks-platforms">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/racks&platforms/magnum-platforms-1.jpg" data-image2="images/products/racks&platforms/magnum-platforms-2.jpg" data-image3="images/products/racks&platforms/magnum-platforms-3.jpg" data-image4="images/products/racks&platforms/magnum-platforms-4.jpg" data-itemheading="Magnum Platforms" data-itemdesc="" alt="">
+                                    <span class="item-name">Magnum Platforms</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 racks-platforms">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/racks&platforms/magnum-pro-platforms-1.jpg" data-image2="images/products/racks&platforms/magnum-pro-platforms-2.jpg" data-image3="images/products/racks&platforms/magnum-pro-platforms-3.jpg" data-image4="images/products/racks&platforms/magnum-pro-platforms-4.jpg" data-itemheading="Magnum Pro Platforms" data-itemdesc="" alt="">
+                                    <span class="item-name">Magnum Pro Platforms</span>
+                                </div></a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3 racks-platforms">
+                                <a href="item3.html">
+                                <div class="item-card">
+                                    <img onclick="selfun(this)" src="images/products/racks&platforms/magnum-vrs-platforms-1.jpg" data-image2="images/products/racks&platforms/magnum-vrs-platforms-2.jpg" data-itemheading="Magnum VRS Platforms" data-itemdesc="Create an unmatched strength training environment with platforms featuring our exclusive Vibration Reduction System. Our VRS impact-absorption platforms reduce sound and bounce caused by dropping barbells during Olympic lifts, protecting floors, bars, weights, and plates from hard use. The multi-layer design minimizes vibrations transferred through floors, essential for above-ground training facilities, and the low platform height allows easy accessibility. VRS Platform kits are available in a variety of styles and sizes, so it’s easy to upgrade existing Matrix platforms or create a rugged new training experience." alt="">
+                                    <span class="item-name">Magnum VRS Platforms</span>
+                                </div></a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=========================================================footer===============================================================-->
+    <footer>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="footer-text-wrapper">
+                    <h4>Lorem Ipsum</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut repellat nisi amet provident sint architecto a est inventore, ipsum incidunt magni nobis enim, optio obcaecati dolorem dicta eveniet! Odio, accusamus.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="link-wrapper">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="address-wrapper">
+                    <h4>Address</h4>
+                    <div>
+                        <div class="address-container">
+                            <span><img class="address-icon" src="images/location.png" alt=""></span>
+                            <p>ABCD Building <br>
+                                XYZ street <br>
+                                Near new road</p>
+                        </div>
+                        <div class="address-container">
+                            <span><img class="address-icon" src="images/phone.png" alt=""></span>
+                            <p>1234567890</p>
+                        </div>
+                        <div class="address-container">
+                            <span><img class="address-icon" src="images/mail.png" alt=""></span>
+                            <p>general@example.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <img src="images/facebook.png" alt="">
+                    <img src="images/instagram.png" alt="">
+                    <img src="images/linkedin.png" alt="">
+                    <img src="images/youtube.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+         
+    </script>
+    <script src="script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

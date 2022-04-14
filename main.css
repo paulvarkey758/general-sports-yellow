@@ -109,12 +109,14 @@ nav{
 }
 .feature-card p{
     color: white;
+    margin-top: 1rem;
 }
 .feature-card i img{
     width: 80px;
     height: 80px;
     margin-bottom: 1rem;
 }
+
 /*====================================================intro area========================================================================*/
 #introSection{
     background-color: black;
@@ -378,6 +380,9 @@ footer{
     .product-card{
         width: 100%;
     }
+    .feature-card{
+        height: 20rem;
+    }
 }
 /*======================================mobile=====================*/
 @media screen and (max-width:576px){
@@ -429,6 +434,9 @@ footer{
     .product-card {
         width: 70%;
     }
+    .feature-card{
+        height: auto;
+    }
 
 }
 /*==================================================medium==============================*/
@@ -470,6 +478,9 @@ footer{
     .product-wrapper{
         top: -7rem;
     }
+    .feature-card{
+        height: 22rem;
+    }
 }
 /*========================================================large==========================*/
 @media screen and (min-width:992px) and (max-width:1200px){
@@ -491,4 +502,14 @@ footer{
     .contact-form{
         width: 80%;
     }
+    .feature-card{
+        height: 22rem;
+    }
+}
+/*==============================================xlarge=================================*/
+@media screen and (min-width:1200px){
+    .feature-card{
+        height: 20rem;
+    }
+    
 }
