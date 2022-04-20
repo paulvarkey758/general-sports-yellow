@@ -26,10 +26,10 @@
     <!--============================================================categories================================================================-->
     <div class="category-bar">
         <div class="inner-bar">
-            <button class="cardio-btn">CARDIO</button>
-            <button class="strength-btn">GROUP TRAINING</button>
-            <a href="strength.html"><button>STRENGTH</button></a>
-            <button>ACCESSORIES</button>
+            <button id="cardio-page">CARDIO</button>
+            <button id="group-t-page">GROUP TRAINING</button>
+            <button id="strength-page">STRENGTH</button>
+            <button id="accessory-page">ACCESSORIES</button>
         </div>
     </div>
     <!--=======================================================poducts=================================================================-->
@@ -41,11 +41,11 @@
                     <div>
                         <form action="" id="cardio-category-form">
                             <ul id="cardio-sub-list">
-                                <li><input type="checkbox" id="sngl" class="strength-sub-category" data-subcategory="single-station" checked><label for="tmls">single station</label></li>
-                                <li><input type="checkbox" id="mlts" class="strength-sub-category" data-subcategory="multi-station" checked><label for="astr">multi station</label></li>
-                                <li><input type="checkbox" id="frwe" class="strength-sub-category" data-subcategory="fr-weights" checked><label for="elpt">free weights</label></li>
+                                <li><input type="checkbox" id="sngl" class="strength-sub-category" data-subcategory="single-station" checked><label for="sngl">single station</label></li>
+                                <li><input type="checkbox" id="mlts" class="strength-sub-category" data-subcategory="multi-station" checked><label for="mlts">multi station</label></li>
+                                <li><input type="checkbox" id="frwe" class="strength-sub-category" data-subcategory="fr-weights" checked><label for="frwe">free weights</label></li>
                                 <li><input type="checkbox" id="clml" class="strength-sub-category" data-subcategory="plate-loaded" checked><label for="clml">plate loaded</label></li>
-                                <li><input type="checkbox" id="pltd" class="strength-sub-category" data-subcategory="racks-platforms" checked><label for="stpr">racks & platforms</label></li>
+                                <li><input type="checkbox" id="pltd" class="strength-sub-category" data-subcategory="racks-platforms" checked><label for="pltd">racks & platforms</label></li>
                             </ul>
                             <div class="filter-btn-wrapper">
                                 <input class="filter-btn" id="filter-strength-sub-btn" type="submit" value="Filter">

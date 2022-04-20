@@ -249,3 +249,15 @@ function goBack(){
     window.history.back();
 }
 
+$("#cardio-page").click(function(){
+    window.location="cardio.html";
+});
+
+$("#group-t-page").click(function(){
+    window.location="gtraining.html";
+});
+
+$("#strength-page").click(function(){
+    window.location="strength.html";
+});
+

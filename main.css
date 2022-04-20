@@ -187,11 +187,11 @@ nav{
     display: block;
     background-color: #fdc43f;
     color: black;
-    width: 9rem;
-    height: 4rem;
+    width: 7rem;
+    height: 3rem;
     border-radius: 25px;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .product-btn:hover{
     background-color: #f1b732;

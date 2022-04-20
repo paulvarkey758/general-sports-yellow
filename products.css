@@ -111,9 +111,9 @@ nav{
     box-shadow: 5px 5px 10px black;
 }
 .back-btn img{
-    width: 80%;
+    width: 70%;
     display: block;
-    margin: auto;
+    margin:2px auto 0;
 }
 #item-area{
     margin-top: 7rem;
@@ -126,12 +126,12 @@ nav{
     width: 100%;
 }
 .item-gallery{
-    width: 22rem;
+    width: 19rem;
     margin:0 auto 2rem;
 }
 .gallery-tile{
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     display: none;
     border: 2px solid black;
 }
@@ -226,6 +226,7 @@ nav{
 @media screen and (max-width:768px){
     .inner-bar {
         width: 100%;
+        display: flex;
     }
     .inner-bar button{
         font-size: 15px;
@@ -249,11 +250,11 @@ nav{
     }
     /*===================item page==========*/
 
-    .back-btn{
-        top: 6rem;
-        left: 1rem;
-        width: 2.5rem;
-        height: 2.5rem;
+    .back-btn {
+        top: 4rem;
+        left: 0.5rem;
+        width: 2rem;
+        height: 2rem;
     }
     .console{
         margin-right: 0.5rem;
@@ -273,16 +274,16 @@ nav{
         max-width: 100% !important;
     }
     .filter-button {
-        top: 12px;
-        left: 8px;
-        width: 45px;
-        height: 45px;
+        top: 8px;
+        left: 5px;
+        width: 35px;
+        height: 35px;
     }
     .filter-button-inner img {
-        width: 29px;
+        width: 21px;
     }
     .console img{
-        width: 50px;
+        width: 35px;
     }
     .item-details-wrapper {
         padding: 2rem;
