@@ -180,6 +180,7 @@ nav{
     width: 17rem;
     position: absolute;
     bottom: -8rem;
+    left: -6rem;
     background-color: black;
     color: white;
     padding: 0.5rem;
@@ -288,6 +289,14 @@ nav{
     .item-details-wrapper {
         padding: 2rem;
     }
+    .label{
+        width: 14rem;
+        left: -8rem;
+    }
+    .label-lft{
+        left: -1rem;
+        bottom: -10rem;
+    }
 }
 
 /*========================================medium devices=======================================*/
@@ -315,6 +324,10 @@ nav{
     }
     .console img{
         width: 50px;
+    }
+    .label{
+        width: 14rem;
+        left: -8rem;
     }
 }
 /*===============================================large devices=================================*/
